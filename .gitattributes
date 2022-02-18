@@ -1,0 +1,51 @@
+# Automatically normalize line endings for all text-based files
+# http://git-scm.com/docs/gitattributes#_end_of_line_conversion
+*       text=auto
+
+
+.*      text=auto
+*.cs    text=auto diff=csharp
+*.css   text=auto
+*.fs    text=auto
+*.fsx   text=auto
+*.html  text=auto
+*.htm   text=auto
+*.js    text=auto
+*.less  text=auto
+*.json  text=auto
+*.less  text=auto
+*.md    text=auto
+*.ps1   text=auto
+*.psm1  text=auto
+*.py    text=auto
+*.sass  text=auto
+*.scss  text=auto
+*.sql   text=auto
+*.txt   text=auto
+*.vb    text=auto
+*.xml   text=auto
+
+
+*.doc   diff=astextplain
+*.DOC   diff=astextplain
+*.docx  diff=astextplain
+*.DOCX  diff=astextplain
+*.dot   diff=astextplain
+*.DOT   diff=astextplain
+*.pdf   diff=astextplain
+*.PDF   diff=astextplain
+*.rtf   diff=astextplain
+*.RTF   diff=astextplain
+
+
+*.jpg   binary
+*.png   binary
+*.gif   binary
+*.bson	binary
+
+
+*.csproj text=auto merge=union
+*.vbproj text=auto merge=union
+*.fsproj text=auto merge=union
+*.dbproj text=auto merge=union
+*.sln    text=auto eol=crlf merge=union
