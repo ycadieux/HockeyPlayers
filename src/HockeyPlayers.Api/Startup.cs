@@ -116,7 +116,8 @@ namespace HockeyPlayers.Api
                 new Player { Id = 4, JerseyNumber = 31, FirstName = "Carey", LastName = "Price", Position = Position.G, Active = true },
                 new Player { Id = 5, JerseyNumber = 6, FirstName = "Shea", LastName = "Weber", Position = Position.D, Active = false },
                 new Player { Id = 6, JerseyNumber = 97, FirstName = "Connor", LastName = "McDavid", Position = Position.C, Active = true },
-                new Player { Id = 7, JerseyNumber = 66, FirstName = "Mario", LastName = "Lemieux", Position = Position.C, Active = true },
+                new Player { Id = 7, JerseyNumber = 66, FirstName = "Mario", LastName = "Lemieux", Position = Position.C, Active = false },
+                new Player { Id = 8, JerseyNumber = 77, FirstName = "Raymond", LastName = "Bourque", Position = Position.D, Active = false },
             };
 
             context.Players.AddRange(players);
