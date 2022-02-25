@@ -26,6 +26,15 @@ steps:
     arguments: '--no-restore'
   displayName: 'Build projects'
 
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'publish'
+    publishWebProjects: false
+    projects: '**/HockeyPlayers.Api.csproj'
+    arguments: '--configuration $(buildConfiguration) --no-restore'
+    modifyOutputPath: false
+  displayName: 'Publish Api'
+
 - task: CopyFiles@2
   inputs:
     Contents: '**/*.zip'
